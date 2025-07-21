@@ -3,6 +3,7 @@
   margin: 0;
 }
 
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -183,19 +184,6 @@ p{
 }
 
 
-
-
-
-@media screen and (max-width:576px){
-  .logo-container{
-    max-width: 95%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-  }
-}
-
-
 /* footer */
 .footer{
   width: 100%;
@@ -206,9 +194,7 @@ p{
   align-items: center;
   margin-top: 50px;
 }
-.footer-container{
 
-}
 
 .footer-title{
   font-size: 36px;
@@ -243,13 +229,13 @@ p{
   font-weight: 700;
   color: #0A0826;
   margin-top: 20px;
+  margin-bottom: 26px;
 }
 .feature-desc{
   font-size: 18px;
   font-weight: 700;
   color: #6C6C6C;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 12px;
 }
 .feature-btn{
   width: 155px;
@@ -258,6 +244,7 @@ p{
   background-color: #E02C6D;
   border-radius: 12px;
   border: none;
+  margin-top: 16px;
 }
 .footer-icons{
   display: flex;
@@ -275,4 +262,89 @@ p{
 }
 .footer-icons i:hover {
   color: #007bff;
+}
+
+
+
+
+/* Small devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    height: auto;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .logo-container {
+    flex-wrap: wrap;
+    gap: 16px;
+    height: auto;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .banner-img {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .banner-img img {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+
+  .banner-title {
+    font-size: 38px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .feature {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .feature-img, .feature-img img{
+    width: 100%;
+    height: auto;
+  }
+
+  .footer {
+    flex-direction: column;
+
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .footer-icons {
+    margin: 20px 0 0;
+    justify-content: center;
+    margin-left: 0;
+  }
 }
