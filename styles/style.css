@@ -259,3 +259,20 @@ p{
   border-radius: 12px;
   border: none;
 }
+.footer-icons{
+  display: flex;
+  gap: 20px;
+  margin-left: 90px;
+}
+.footer-icon{
+  width: 30px;
+  height: 30px;
+}
+.footer-icons i {
+  font-size: 24px;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+}
+.footer-icons i:hover {
+  color: #007bff;
+}
