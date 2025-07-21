@@ -24,6 +24,44 @@
   font-weight: 500;
   font-style: normal;
 }
+body {
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+}
+
+.nav{
+  max-width: 1062px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+.nav-title{
+  color: #ff6600;
+  font-size: 30px;
+  font-weight: 900;
+}
+.menu{
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+.menu li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu li:hover {
+  color: #ff6600;
+}
+
+.icons{
+  width: 20px;
+  height: 20px;
+}
 
 /* logo section */
 .logo-container{
@@ -175,4 +213,5 @@ p{
   color: #FFFFFF;
   background-color: #E02C6D;
   border-radius: 12px;
+  border: none;
 }
